@@ -1,8 +1,8 @@
 def alphabetize(arr)
-  ESPERANTO_ALPHABET ="abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  translat ="abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   arr.sort_by do |word|
     word.split('').map do |letter|
-      ESPERANTO_ALPHABET.index(letter)
+      translat.index(letter)
     end
   end
 end
